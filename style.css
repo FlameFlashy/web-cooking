@@ -16,12 +16,24 @@ body a {
     color: #20303c;
 }
 
+header {
+    position: fixed;
+    z-index: 2;
+    background-color: #fff;
+    min-height: 54px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
 .header-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1366px;
-    margin: 24px auto;
+    margin: 0px auto;
+    padding: 10px 0px;
 }
 
 .logo {
@@ -36,6 +48,139 @@ body a {
     align-items: center;
 }
 
-.menu a{
-    margin: 5px 10px;
+.menu a {
+    margin: 5px 15px;
+    padding: 5px;
+    transition: 0.8s;
+}
+
+.menu a:hover{
+    color: #8B98A7;
+    transition: 0.8s;
+}
+.menu a:active {
+    color: #8B98A7;
+}
+
+.title-page {
+    background-image: url("/img/main-bg.webp");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 60px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} 
+
+.main-wrapper h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: Georgia;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.main-wrapper h3 {
+    font-size: 24px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 10px 10px 50px 10px;
+}
+
+.button-works {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px;
+    transition: border 1s;
+}
+
+.button-works:hover {
+    background-color: #20303c;
+    border-color: #20303c;
+    transition: 1s;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1366px;
+    margin: 0px auto;
+}
+
+.portfolio-wrap1 {
+    background-image: url("img/editorial.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+.portfolio-wrap2 {
+    background-image: url("img/servise.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 10px;
+}
+.portfolio-wrap3 {
+    background-image: url("img/bakery.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.portfolio h3 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: Georgia;
+    font-weight: 500;
+    margin: 20px;
+    color: #fff;
+    padding-top: 85px;
+}
+
+footer {
+    background-color: #fff;
+    min-height: 54px;
+    width: 100%;
+}
+
+.soc-links {
+    display: flex;
+    justify-content: center;
+}
+
+.soc-links a {
+    margin: 15px;
+    padding: 3px;
+    border: 1px solid #fff;
+    width: 28px;
+    height: 28px;
+    transition: border 1s;
+}
+
+.soc-links a:hover {
+    border-color: black;
 }
