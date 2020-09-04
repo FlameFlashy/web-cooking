@@ -64,6 +64,7 @@ header {
 
 .title-page {
     background-image: url("/img/main-bg.jpg");
+    background-color: #adb8fa;
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -116,6 +117,7 @@ header {
 
 .portfolio-wrap1 {
     background-image: url("img/editorial.webp");
+    background-color: #adb8fa;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -128,6 +130,7 @@ header {
 }
 .portfolio-wrap2 {
     background-image: url("img/servise.webp");
+    background-color: #adb8fa;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -140,6 +143,7 @@ header {
 }
 .portfolio-wrap3 {
     background-image: url("img/bakery.webp");
+    background-color: #adb8fa;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
