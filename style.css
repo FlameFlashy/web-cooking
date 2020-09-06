@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-body{
+body {
     color: #20303c;
     font-family: 'roboto';
     width: 100%;
@@ -54,10 +54,11 @@ header {
     transition: 0.8s;
 }
 
-.menu a:hover{
+.menu a:hover {
     color: #8B98A7;
     transition: 0.8s;
 }
+
 .menu a:active {
     color: #8B98A7;
 }
@@ -76,7 +77,7 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-} 
+}
 
 .main-wrapper h1 {
     font-size: 70px;
@@ -128,6 +129,7 @@ header {
     align-items: center;
     margin: 20px 0;
 }
+
 .portfolio-wrap2 {
     background-image: url("img/servise.webp");
     background-color: #adb8fa;
@@ -141,6 +143,7 @@ header {
     align-items: center;
     margin: 20px 10px;
 }
+
 .portfolio-wrap3 {
     background-image: url("img/bakery.webp");
     background-color: #adb8fa;
@@ -171,10 +174,40 @@ header {
     margin: 0px auto;
 }
 
+.about .img-wrap {
+    flex-basis: 50%;
+}
+
+.about img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
 .about .content {
     display: flex;
     flex-direction: column;
-    padding: 0px;
+    padding: 60px 80px;
+    background-color: #fbfafa;
+    flex-basis: 50%;
+}
+
+.about h2 {
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.about p {
+    color: #545555;
+    font-weight: 400;
+    text-align: left;
+    font-size: 16px;
+}
+
+.about h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #303131;
 }
 
 footer {
