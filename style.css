@@ -188,7 +188,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 60px 80px;
-    background-color: #fbfafa;
+    background-color: #f0f3f6;
     flex-basis: 50%;
 }
 
@@ -208,6 +208,66 @@ header {
     font-size: 20px;
     font-weight: 400;
     color: #303131;
+}
+
+.books {
+    display: flex;
+    background-color: #f0f3f6;
+    max-width: 1366px;
+    margin: 20px auto;
+    align-items: center;
+}
+
+.books .content {
+    display: flex;
+    flex-direction: column;
+    padding: 120px;
+    background-color: #f0f3f6;
+    flex-basis: 50%;
+}
+
+.books .content .price-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.books .content .price-wrap .button-works{
+    border-color: #20303c;
+    color: #20303c;
+    padding: 10px 30px;
+    margin-left: 20px;
+}
+
+.books .content .price-wrap .button-works:hover{
+    color: #fff;
+}
+
+.books h2 {
+    font-weight: 400;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.books p {
+    color: #545555;
+    font-weight: 400;
+    text-align: left;
+    font-size: 16px;
+}
+
+.books .price {
+    font-weight: 400;
+    font-size: 60px;
+    color: #20303c;
+    position: relative;
+    margin-right: 34px;
+}
+
+.price sup{
+    font-size: 16px;
+    color: #20303c;
+    top: -10px;
+    position: absolute;
 }
 
 footer {
