@@ -281,7 +281,7 @@ header {
     display: flex;
     background-color: #f0f3f6;
     max-width: 1020px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .blogs .img-wrap {
