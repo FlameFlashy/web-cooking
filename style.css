@@ -64,7 +64,7 @@ header {
 }
 
 .title-page {
-    background-image: url("/img/main-bg.jpg");
+    background-image: url("./img/main-bg.jpg");
     background-color: #adb8fa;
     width: 100%;
     height: 100vh;
@@ -117,7 +117,7 @@ header {
 }
 
 .portfolio-wrap1 {
-    background-image: url("img/editorial.webp");
+    background-image: url("./img/editorial.webp");
     background-color: #adb8fa;
     background-position: center;
     background-repeat: no-repeat;
@@ -131,7 +131,7 @@ header {
 }
 
 .portfolio-wrap2 {
-    background-image: url("img/servise.webp");
+    background-image: url("./img/servise.webp");
     background-color: #adb8fa;
     background-position: center;
     background-repeat: no-repeat;
@@ -145,7 +145,7 @@ header {
 }
 
 .portfolio-wrap3 {
-    background-image: url("img/bakery.webp");
+    background-image: url("./img/bakery.webp");
     background-color: #adb8fa;
     background-position: center;
     background-repeat: no-repeat;
@@ -298,9 +298,13 @@ header {
     width: 40px;
 }
 
+.blogs .button {
+    width: 15px;
+    height: 15px;
+}
+
 .blogs .button img {
-    width: 14px;
-    height: 14px;
+    display: block;
 }
 
 .blogs .content-blog {
