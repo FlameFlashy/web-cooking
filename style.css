@@ -231,14 +231,14 @@ header {
     align-items: center;
 }
 
-.books .content .price-wrap .button-works{
+.books .content .price-wrap .button-works {
     border-color: #20303c;
     color: #20303c;
     padding: 10px 30px;
     margin-left: 20px;
 }
 
-.books .content .price-wrap .button-works:hover{
+.books .content .price-wrap .button-works:hover {
     color: #fff;
 }
 
@@ -263,7 +263,7 @@ header {
     margin-right: 34px;
 }
 
-.price sup{
+.price sup {
     font-size: 16px;
     color: #20303c;
     top: -10px;
@@ -374,6 +374,101 @@ header {
 
 .footer-blog .button {
     display: flex;
+}
+
+.contakt {
+    display: flex;
+    max-width: 1366px;
+    margin: 10px auto;
+    background-color: #f0f3f6;
+    align-items: center;
+}
+
+.contakt .img-wrap {
+    flex-basis: 50%;
+}
+
+.contakt img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.contakt .contakt-wrap {
+    box-sizing: border-box;
+    flex-basis: 50%;
+    padding: 60px 120px
+}
+
+.contakt h3 {
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.contakt p {
+    color: #545555;
+    font-weight: 400;
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.contakt p.contakt-par {
+    margin-bottom: 40px;
+}
+
+.contakt form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contakt input {
+    max-width: 260px;
+    height: 26px;
+    padding-left: 24px;
+    margin-bottom: 10px;
+}
+
+.contakt input:hover {
+    border-width: 2px;
+    transition: border 0.5s;
+}
+
+.contakt textarea {
+    max-width: 260px;
+    max-height: 260px;
+    padding-left: 24px;
+    margin-bottom: 10px;
+}
+
+.contakt textarea {
+    max-width: 260px;
+    max-height: 260px;
+    padding-left: 24px;
+    margin-bottom: 10px;
+}
+
+.contakt input.contakt-btn {
+    color: #fff;
+    padding: 0px;
+    background-color: #20303c;
+    border-color: #20303c;
+    transition: border 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+    width: 290px;
+    max-width: none;
+}
+
+
+.contakt input.contakt-btn:hover {
+    background-color: #20303c;
+    border-color: #20303c;
+    transition: 1s;
+    border: 1px solid #fff;
 }
 
 footer {
