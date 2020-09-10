@@ -63,6 +63,10 @@ header {
     color: #8B98A7;
 }
 
+.button-burger {
+    display: none;
+}
+
 .title-page {
     background-image: url("./img/main-bg.jpg");
     background-color: #adb8fa;
@@ -493,4 +497,58 @@ footer {
 
 .soc-links a:hover {
     border-color: black;
+}
+
+@media(max-width: 480px) {
+
+    .header-wrapper {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: none;
+        background-color: #f0f3f6;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        min-height: 100vh;
+        padding: 30% 0;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .button-burger {
+        display: flex;
+        flex-direction: column;
+        height: 18px;
+        width: 24px;
+        justify-content: space-between;
+    }
+
+    .button-burger:target .item {
+        display: none;
+    }
+
+    .menu-mobile:target {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .button-burger .item {
+        background-color: black;
+        height: 2px;
+        width: 100%;
+    }
+
+    .books {
+        flex-direction: column;
+    }
 }
