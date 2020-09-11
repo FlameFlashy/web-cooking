@@ -63,6 +63,11 @@ header {
     color: #8B98A7;
 }
 
+.menu-mobile {
+    visibility: hidden;
+    position: absolute;
+}
+
 .button-burger {
     display: none;
 }
@@ -265,6 +270,16 @@ header {
     color: #20303c;
     position: relative;
     margin-right: 34px;
+}
+
+.books .img-wrap {
+    flex-basis: 50%;
+}
+
+.books img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 .price sup {
@@ -501,6 +516,45 @@ footer {
 
 @media(max-width: 480px) {
 
+    .main-wrapper h1 {
+        font-size: 56px;
+    }
+
+    .portfolio {
+        flex-direction: column;
+    }
+
+    .portfolio-wrap1 {
+        width: 100%;
+        height: 300px;
+    }
+
+    .portfolio-wrap2 {
+        width: 100%;
+        height: 300px;
+        margin: 20px 0;
+    }
+
+    .portfolio-wrap3 {
+        width: 100%;
+        height: 300px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about .content {
+        padding: 20px;
+    }
+
+    .about h2{
+        margin-bottom: 10px;
+    }
+    .about h4{
+        margin-bottom: 0px;
+    }
+
     .header-wrapper {
         padding: 0 20px;
         box-sizing: border-box;
@@ -550,5 +604,19 @@ footer {
 
     .books {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .books .content {
+        padding: 0px 20px;
+    }
+
+    .contakt {
+        flex-direction: column;
+    }
+
+    .contakt .contakt-wrap {
+        padding: 60px;
     }
 }
