@@ -5,35 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <meta name="veiwport" content="width=device-width">
+
+    <title>Web-Cooking</title>
 </head>
 
 <body>
-    <header>
-        <div class="header-wrapper">
-            <div class="logo"><a href="index.html">Яна Орлова</a></div>
-            <div class="menu">
-                <a href="index.html">Главная</a>
-                <a href="#">Портфолио</a>
-                <a href="#">Обо мне</a>
-                <a href="#">Книги</a>
-                <a href="#">Блог</a>
-                <a href="#">Связаться</a>
-            </div>
-
-            <a href="#menu" class="button-burger">
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="menu-mobile" id="menu">
-                    <a href="index.html">Главная</a>
-                    <a href="#">Портфолио</a>
-                    <a href="#">Обо мне</a>
-                    <a href="#">Книги</a>
-                    <a href="#">Блог</a>
-                    <a href="#">Связаться</a>
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <a class="logo" href="index.html">Яна Орлова</a></div>
+                <div class="header-burger">
+                    <span></span>
                 </div>
-            </a>
+                <nav class="header_menu">
+                    <ul class="header_list">
+                        <li><a href="#" class="header_link">Главная</a></li>
+                        <li><a href="#" class="header_link">Портфолио</a></li>
+                        <li><a href="#" class="header_link">Обо мне</a></li>
+                        <li><a href="#" class="header_link">Книги</a></li>
+                        <li><a href="#" class="header_link">Блог</a></li>
+                        <li><a href="#" class="header_link">Связаться</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main class="title-page">
@@ -291,6 +286,9 @@
             <a href="#"><img src="img/icon/insta.webp" alt="instagram"></a>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

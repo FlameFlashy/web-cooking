@@ -16,61 +16,72 @@ body a {
     color: #20303c;
 }
 
-header {
+.container {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header {
     position: fixed;
-    z-index: 2;
+    z-index: 50;
     background-color: #fff;
-    min-height: 54px;
     width: 100%;
     left: 0;
     top: 0;
-    right: 0;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 2;
 }
 
 .header-wrapper {
+    position: relative;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    max-width: 1366px;
-    margin: 0px auto;
-    padding: 10px 0px;
+    height: 80px;
+    align-items: center;
 }
 
 .logo {
     font-size: 30px;
     font-weight: 400;
     margin-right: 6px;
+    display: block;
+    z-index: 3;
 }
 
-.menu {
+.header_list {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.header_list li {
+    list-style: none;
+    margin: 0 0 0 20px;
+}
+.header_link {
+    font-size: 16px;
+    text-decoration: none;     
+    transition: 0.8s;  
 }
 
-.menu a {
-    margin: 5px 15px;
-    padding: 5px;
-    transition: 0.8s;
-}
-
-.menu a:hover {
+a.header_link:hover {
     color: #8B98A7;
     transition: 0.8s;
 }
 
-.menu a:active {
-    color: #8B98A7;
-}
-
-.menu-mobile {
-    visibility: hidden;
-    position: absolute;
-}
-
-.button-burger {
+.header-burger {
     display: none;
 }
+
 
 .title-page {
     background-image: url("./img/main-bg.jpg");
@@ -514,7 +525,82 @@ footer {
     border-color: black;
 }
 
-@media(max-width: 480px) {
+@media(max-width: 767px) {
+
+    body.lock {
+        overflow: hidden;
+    }
+
+    .header-burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+    }
+
+    .header-burger span {
+        background-color: #303131;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 9px;
+        z-index: 3;
+        transition: all 0.3s ease 0s;
+    }
+    .header-burger::before,
+    .header-burger::after{
+        content: "";
+        background-color: #303131;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s;
+    }
+    .header-burger::before {
+        top: 0;
+    }
+    .header-burger::after {
+        bottom: 0;
+    }
+
+    .header-burger.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header-burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header-burger.active span{
+        transform: scale(0);
+    }
+
+    .header_menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        padding: 70px 10px 20px 10px;
+        transition: all 0.3s;
+        overflow: auto;
+    }
+
+    .header_menu.active {
+        top: 0;
+    }
+
+    .header_list {
+        display: block;
+    }
+
+    .header_list li {
+        margin: 0 0 20px 0;
+    }
 
     .main-wrapper h1 {
         font-size: 56px;
@@ -555,53 +641,6 @@ footer {
         margin-bottom: 0px;
     }
 
-    .header-wrapper {
-        padding: 0 20px;
-        box-sizing: border-box;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .menu-mobile {
-        display: none;
-        background-color: #f0f3f6;
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        min-height: 100vh;
-        padding: 30% 0;
-        height: 100vh;
-        align-items: center;
-    }
-
-    .button-burger {
-        display: flex;
-        flex-direction: column;
-        height: 18px;
-        width: 24px;
-        justify-content: space-between;
-    }
-
-    .button-burger:target .item {
-        display: none;
-    }
-
-    .menu-mobile:target {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .button-burger .item {
-        background-color: black;
-        height: 2px;
-        width: 100%;
-    }
-
     .books {
         flex-direction: column;
         align-items: center;
@@ -609,7 +648,16 @@ footer {
     }
 
     .books .content {
-        padding: 0px 20px;
+        padding: 0px 80px;
+
+    }
+
+    .books .img-wrap {
+        width: 400px;
+    }
+
+    p.price {
+        margin-bottom: 30px;
     }
 
     .contakt {
